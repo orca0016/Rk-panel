@@ -16,7 +16,9 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.14.2",
     "recharts": "^2.7.2",
-    "smart-webcomponents": "^15.2.10"
+    "smart-webcomponents": "^15.2.10",
+    "swiper": "^10.1.0",
+    "zaman": "^2.0.7"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
