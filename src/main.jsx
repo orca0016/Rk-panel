@@ -24,8 +24,8 @@ function DashboardLayout() {
 function Dash() {
   return (
     <>
-      <div style={{display:"flex" , flexDirection:"column" , width:"100%"}}>
-      <User/>
+      <div style={{ display: "flex", flexDirection: "column", width: "100%" }}>
+        <User />
         <Outlet />
       </div>
     </>
@@ -33,33 +33,35 @@ function Dash() {
 }
 
 const route = createBrowserRouter([
-  { path: "/", element: <App />},
+  { path: "/", element: <App /> },
   {
     path: "/app",
     element: <DashboardLayout />,
     children: [
       {
         path: "dashboard",
-        element:<Dash/>,
-        children:[ {
-          path: "setting",
-          element: <Setting/>
-        },
-        {
-          path: "task",
-          element: <Task/>
-        }, {
-          path: "contact",
-          element: <p>nnnnnnnnnnnnnnnnnnnnnnnnn</p>
-        }, {
-          path: "dash",
-          element: <p>dashboard</p>
-        },
-      ]
+        element: <Dash />,
+        children: [
+          {
+            path: "setting",
+            element: <Setting />,
+          },
+          {
+            path: "task",
+            element: <Task />,
+          },
+          {
+            path: "contact",
+            element: <p>nnnnnnnnnnnnnnnnnnn</p>,
+          },
+          {
+            path: "dash",
+            element: <p>dashboard</p>,
+          },
+        ],
       },
     ],
   },
- 
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
