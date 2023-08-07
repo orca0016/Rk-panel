@@ -1,0 +1,53 @@
+:root {
+    --background1: #3e3e3e;
+    --background2: #636363;
+    --background3: #3c426e;
+    --background4: #525252;
+    --background5: #ffffff;
+    --fontsize1: 2px;
+    --fontsize2: 4px;
+    --fontsize3: 8px;
+    --fontsize4: 10px;
+    --fontsize5: 12px;
+    --fontsize6: 14px;
+    --fontsize7: 18px;
+    --fontsize8: 20px;
+    --fontsize9: 28px;
+    --fontsize10: 34px;
+  }
+.user {
+    color: var(--background5);
+    width: 100%;
+    height: 50px;
+    background-color: var(--background4);
+}
+.user .user-top-row {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+}
+.user .user-top-row ul{
+    padding: 5px 10px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px solid var(--background1);
+}
+.user .user-top-row ul li{
+    cursor: pointer;
+}
+.user .user-cont-body{
+    width: 100%;
+}
+.user .user-cont-body div{
+    margin: 0 auto;
+    width: 90%;
+    height:400px;
+    color:black;
+    background-color: var(--background5);
+    padding:1em 10px;
+    margin-top: 60px;
+}
