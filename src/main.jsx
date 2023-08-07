@@ -52,7 +52,7 @@ const route = createBrowserRouter([
           },
           {
             path: "contact",
-            element: <p>ppppppp</p>,
+            element: <p>last check error</p>,
           },
           {
             path: "dash",
