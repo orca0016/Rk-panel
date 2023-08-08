@@ -19,8 +19,8 @@ function Task() {
             </div>
             <div className="row">
               <label>افزودن پیوند به وظیفه</label>
-              <label for="images" >
-                <span  class="drop-title">کلیک کنید یا بکشید </span>
+              <label htmlFor="images" >
+                <span  className="drop-title">کلیک کنید یا بکشید </span>
                 <img src="../../../public/img/chouis.png" alt="select" />
                 <input type="file" id="images" placeholder="کلیک کنید یا بکشید " />
               </label>

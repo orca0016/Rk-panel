@@ -9,6 +9,7 @@ import Aside from "./components/dashbord/Aside.jsx";
 import User from "./components/dashbord/user.jsx";
 import Setting from "./components/setitng/Setting";
 import Task from "./components/task/Task";
+import SpringModal from "./test";
 
 function DashboardLayout() {
   return (
@@ -52,7 +53,7 @@ const route = createBrowserRouter([
           },
           {
             path: "contact",
-            element: <p>last check error</p>,
+            element:<SpringModal/>,
           },
           {
             path: "dash",
