@@ -9,16 +9,20 @@ import Aside from "./components/dashbord/Aside.jsx";
 import User from "./components/dashbord/user.jsx";
 import Setting from "./components/setitng/Setting";
 import Task from "./components/task/Task";
+import PieChartSwiper from "./components/pieChart/PieChartSwiper";
+import Dashboard from "./pages/Dashboard";
 
 function DashboardLayout() {
   return (
-    <div className="container-dashbord">
-      <Dashbord />
+    <>
+      <div className="container-dashbord">
+        <Dashbord />
+      </div>
       <div className="cont-dash">
         <Aside />
         <Outlet />
       </div>
-    </div>
+    </>
   );
 }
 function Dash() {
@@ -56,7 +60,7 @@ const route = createBrowserRouter([
           },
           {
             path: "dash",
-            element: <p>dashboard</p>,
+            element: <Dashboard />,
           },
         ],
       },
