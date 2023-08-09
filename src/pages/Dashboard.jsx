@@ -3,6 +3,7 @@ import BarCharts from "../components/barChart/BarChart";
 import AreaCharts from "../components/areaChart/AreaChart";
 import PieChartSwiper from "../components/pieChart/PieChartSwiper";
 import "./Dashboard.css";
+import Calendars from "../components/calendar/Calandar";
 
 function Dashboard() {
   return (
@@ -12,6 +13,7 @@ function Dashboard() {
       <div className="h-pieChart-container">
         <PieChartSwiper />
       </div>
+      <Calendars />
     </div>
   );
 }

@@ -1,3 +1,13 @@
-.calandar{
-    
+.calandar {
+  background-color: var(--background1);
+  grid-column: 15/14;
+  grid-row: 1/20;
+  /* margin-left: 20px; */
+}
+
+@media screen and (max-width: 520px) {
+  .calandar {
+    grid-column: span 13;
+    grid-row: span 20;
+  }
 }
