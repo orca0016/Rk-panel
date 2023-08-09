@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./dashbord.css";
 function Aside() {
   return (
-    <side className="aside">
+    <aside className="aside">
       <img src="../../img/photo.png" alt="user" />
       <button>
         <Link to={"/app/dashboard"}>
@@ -45,7 +45,7 @@ function Aside() {
           <img src="../../img/pen (1).png" alt="user" />
         </Link>
       </button>
-    </side>
+    </aside>
   );
 }
 

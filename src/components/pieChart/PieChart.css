@@ -1,7 +1,6 @@
 .h-pieChart {
-  max-width: 400px;
-  height: 300px;
-  background-color: #232323;
+  margin: 0 auto;
+  width: 300px;
 }
 /* .swiper-slide {
 } */
@@ -9,4 +8,11 @@
 .recharts-sector {
   outline: none !important;
   border: none !important;
+}
+
+.h-pieChart-container {
+  margin-top: 50px;
+  grid-column: span 13;
+  grid-row: span 6;
+  position: relative;
 }

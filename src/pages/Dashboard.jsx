@@ -9,7 +9,9 @@ function Dashboard() {
     <div className="h-dashboard-container">
       <BarCharts />
       <AreaCharts />
-      <PieChartSwiper />
+      <div className="h-pieChart-container">
+        <PieChartSwiper />
+      </div>
     </div>
   );
 }

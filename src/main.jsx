@@ -14,7 +14,7 @@ import Dashboard from "./pages/Dashboard";
 
 function DashboardLayout() {
   return (
-    <>
+    <div className="idkjesus">
       <div className="container-dashbord">
         <Dashbord />
       </div>
@@ -22,7 +22,7 @@ function DashboardLayout() {
         <Aside />
         <Outlet />
       </div>
-    </>
+    </div>
   );
 }
 function Dash() {

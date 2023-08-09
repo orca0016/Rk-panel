@@ -1,8 +1,7 @@
 .h-areaChart {
-  width: 100%;
-  height: 200px;
   margin-top: 50px;
-  /* background-color: aqua; */
+  grid-column: span 13;
+  grid-row: span 5;
 }
 
 .h-h1-charts {

@@ -42,3 +42,15 @@ a {
   color: unset;
   text-decoration: none;
 }
+
+.idkjesus {
+  /* max-width: 1440px; */
+  position: relative;
+  height: 960px;
+}
+
+.sex {
+  width: 100%;
+  height: 50px;
+  background-color: #555555;
+}
