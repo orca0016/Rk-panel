@@ -1,9 +1,6 @@
 import * as React from 'react';
 
 import { Link } from "react-router-dom";
-
-
-
 function Aside() {
 
 
@@ -11,7 +8,7 @@ function Aside() {
 
   return (
     <aside className="aside">
-          <img src="../../img/photo.png" alt="user" />
+      <img src="../../img/photo.png" alt="user" />
       <button>
         <Link to={"/app/dashboard"}>
           <img src="../../img/user.png" alt="user" />

@@ -9,12 +9,13 @@ import Aside from "./components/dashbord/Aside.jsx";
 import User from "./components/dashbord/user.jsx";
 import Setting from "./components/setitng/Setting";
 import Task from "./components/task/Task";
-import SpringModal from "./test";
 
 function DashboardLayout() {
   return (
-    <div className="container-dashbord">
-      <Dashbord />
+    <div className="idkjesus">
+      <div className="container-dashbord">
+        <Dashbord />
+      </div>
       <div className="cont-dash">
         <Aside />
         <Outlet />
@@ -53,11 +54,11 @@ const route = createBrowserRouter([
           },
           {
             path: "contact",
-            element:<SpringModal/>,
+            element:<p>fdsfs</p>,
           },
           {
             path: "dash",
-            element: <p>dashboard</p>,
+            element: <Dashbord/>,
           },
         ],
       },

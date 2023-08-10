@@ -1,40 +1,56 @@
 :root {
-    --blue-green: #0F0F0F;
-    --dark-gray: #555555;
-    --light-gray: #dcdde0;
-    --light-gray-text: #ababb0;
-    --background1: #f9f9f9;
-    --background2-5-6: #ffffff;
-    --background3: #f1f1f1;
-    --background4: #eceff1;
-    --fontthin: vazirthin;
-    --font: vazir;
-    --fontsize1: 2px;
-    --fontsize2: 4px;
-    --fontsize3: 8px;
-    --fontsize4: 10px;
-    --fontsize5: 12px;
-    --fontsize6: 14px;
-    --fontsize7: 18px;
-    --fontsize8: 20px;
-    --fontsize9: 28px;
-    --fontsize10: 34px;
-  }
-@font-face {
-    font-family: dana;
-    src: url("../../fonts/dana-regular.ttf");
-  }
-@font-face {
-    font-family: danabold;
-    src: url("../../fonts/dana-bold.ttf");
-  }
-*{
-    font-family: dana;
+  --blue-green: #0f0f0f;
+  --dark-gray: #555555;
+  --light-gray: #dcdde0;
+  --light-gray-text: #ababb0;
+  --background1: #f9f9f9;
+  --background2-5-6: #ffffff;
+  --background3: #f1f1f1;
+  --background4: #eceff1;
+  --fontthin: vazirthin;
+  --font: vazir;
+  --fontsize1: 2px;
+  --fontsize2: 4px;
+  --fontsize3: 8px;
+  --fontsize4: 10px;
+  --fontsize5: 12px;
+  --fontsize6: 14px;
+  --fontsize7: 18px;
+  --fontsize8: 20px;
+  --fontsize9: 28px;
+  --fontsize10: 34px;
 }
-body{
+@font-face {
+  font-family: dana;
+  src: url("../../fonts/dana-regular.ttf");
+}
+@font-face {
+  font-family: danabold;
+  src: url("../../fonts/dana-bold.ttf");
+}
+* {
+  font-family: dana;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
   background-color: #232323;
+  /* overflow-x: hidden; */
 }
-a{
+a {
   color: unset;
   text-decoration: none;
+}
+
+.idkjesus {
+  /* max-width: 1440px; */
+  position: relative;
+  height: 960px;
+}
+
+.sex {
+  width: 100%;
+  height: 50px;
+  background-color: #555555;
 }
