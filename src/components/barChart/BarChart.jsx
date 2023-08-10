@@ -54,7 +54,7 @@ function BarCharts() {
           data={data}
           margin={{
             top: 5,
-            right: 20,
+            right: 50,
             left: 0,
             bottom: 5,
           }}

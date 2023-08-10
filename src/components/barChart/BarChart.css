@@ -1,0 +1,13 @@
+.h-barChart {
+  grid-column: span 13;
+  grid-row: span 5;
+  background-color: #232323;
+}
+
+.recharts-text {
+  fill: white !important;
+}
+
+.recharts-cartesian-axis-line {
+  stroke: transparent !important;
+}

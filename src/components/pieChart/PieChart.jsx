@@ -22,7 +22,7 @@ function PieCharts() {
       <h1 style={{ marginTop: "70px" }} className="h-h1-charts">
         نمودار x
       </h1>
-      <div style={{ maxWidth: "400px", height: "300px", marginTop: "10px" }}>
+      <div style={{ maxWidth: "400px", height: "240px" }}>
         <ResponsiveContainer width="100%" height="100%">
           <PieChart width={400} height={400}>
             <Pie

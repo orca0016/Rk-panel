@@ -1,0 +1,13 @@
+.h-areaChart {
+  margin-top: 50px;
+  grid-column: span 13;
+  grid-row: span 5;
+}
+
+.h-h1-charts {
+  color: white;
+  margin-bottom: 10px;
+  font-size: 28px;
+  margin-right: 20px;
+  display: inline;
+}
