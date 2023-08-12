@@ -1,10 +1,10 @@
-import { Outlet } from "react-router-dom";
 import "./dashbord.css";
 
 const Dashbord = () => {
   return (
     <>
       <nav className="nav">
+        <button className="h-hamburgur-btn"></button>
         <span>
           <img src="../../img/photo.png" alt="user" />
           <div>
