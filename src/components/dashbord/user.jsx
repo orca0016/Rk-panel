@@ -1,5 +1,4 @@
 import "./user.css";
-import BarChart from "./barChart";
 import { Link, Outlet } from "react-router-dom";
 
 const User = () => {
@@ -20,6 +19,13 @@ const User = () => {
             <Link to={"./contact"}>ارتباط با مشاور</Link>
           </li>
         </ul>
+
+        <div>
+          <label htmlFor="btn-dark" className="btn-dark">
+            <input id="btn-dark" type="checkbox" />
+            <div className="circle"></div>
+          </label>
+        </div>
       </div>
     </>
   );

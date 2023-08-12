@@ -52,6 +52,71 @@
   padding: 1em 10px;
   margin-top: 60px;
 }
+.user-top-row  > div{
+  width: 50px;
+  display: flex;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+
+}
+.btn-dark {
+  width: 100%;
+  height: 100%;
+  background-color: var(--background5);
+  box-shadow: inset  0 0 4px rgba(68, 68, 68, 0.864);
+  border-radius: 40px;
+  display: flex;
+  transition: 0.4s ;
+  position: relative;
+  padding: 4px;
+}
+.btn-dark input {
+  opacity: 0;
+  position: absolute;
+  right: 0px;
+
+}
+.btn-dark  > div {
+  width:16px ;
+  height:16px;
+  position: absolute;
+  top: 2px;
+  border-radius: 100%;
+  background-color: #b5b5b5;
+  transition: 0.4s ;
+  animation: btn-dark2 .4s forwards;
+  box-shadow:  0 0 6px rgba(0, 0, 0, 0.609);
+}
+
+
+.btn-dark input:checked + .circle {
+  transition: 0.4s ;
+  animation: btn-dark .4s forwards;
+  background-color: #525252;
+}
+
+
+@keyframes btn-dark {
+  from{
+    left: 3px;
+  }
+  to{
+    left: 30px;
+  }
+}
+
+@keyframes btn-dark2 {
+  from{
+    left: 30px;
+
+  }
+  to{
+    left: 5px;
+    /* right: 3px; */
+  }
+}
 
 @media screen and (max-width: 464px) {
   .user-top-row ul li a {

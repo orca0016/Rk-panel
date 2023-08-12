@@ -15,6 +15,21 @@
   --fontsize9: 28px;
   --fontsize10: 34px;
 }
+@keyframes run {
+  from{
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+ .item , .item1 , .item2{
+  transform: translateX(-20px);
+    opacity: 0;
+  animation: run 0.3s forwards ease-in-out;
+ }
 input:focus,
 textarea:focus {
   border: none;
@@ -39,6 +54,8 @@ textarea::placeholder {
   text-align: center;
   grid-area: 1/1 1/3;
   padding: 10px;
+  animation-delay: 0.2s;
+  min-width: 200px;
 }
 .item h2 {
   font-size: 14px;
@@ -126,6 +143,9 @@ textarea::placeholder {
     padding: 10px;
   grid-area: 1/1 1/3;
   color: var(--background5);
+  min-width: 200px;
+  animation-delay: 0.4s;
+
 }
 
 .item1 .row  {
@@ -163,6 +183,9 @@ textarea::placeholder {
   grid-area: 1/1 1/3;
   color: var(--background5);
   padding: 0 10px;
+  min-width: 200px;
+  animation-delay: 0.5s;
+
 }
 .item2 p {
 margin: 10px 0 ;
@@ -184,4 +207,15 @@ margin: 10px 0 ;
   border: none;
   color: var(--background5);
   font-size: 1.2rem;
+}
+
+@media screen and (max-width:780px) {
+  .task{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .item{
+    
+  }
+  
 }

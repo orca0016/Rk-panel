@@ -11,3 +11,9 @@
 .recharts-cartesian-axis-line {
   stroke: transparent !important;
 }
+.swiper-slide > div{
+  display: none;
+}
+.swiper-slide-active > div{
+  display: block;
+}
