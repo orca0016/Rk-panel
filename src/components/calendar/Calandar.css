@@ -1,65 +1,31 @@
-.calandar {
+.calandar-container {
   background-color: var(--background1);
   grid-column: 15/14;
   grid-row: 1/20;
   display: flex;
   justify-content: center;
+  /* margin-left: 30px; */
 }
 
-.h-calander-self {
-  width: 250px !important;
-  height: 290px !important;
-  background-color: var(--blue-green) !important;
-}
-
-.h-calander-self button {
-  width: 32px !important;
-  height: 32px !important;
-}
-
-.h-calander-self .css-yey56k {
-  background-color: var(--blue-green);
-}
-
-.h-calander-self .css-7qlbje button {
+.mantine-Calendar-calendarHeaderControl,
+.mantine-Calendar-calendarHeaderLevel,
+.mantine-Calendar-pickerControl,
+.mantine-Calendar-day {
   color: white;
 }
 
-.h-calander-self .css-7qlbje button[data-selected="true"] {
-  color: black;
-  background-color: var(--background2-5-6);
-}
-
-.h-calander-self .css-nvt82c {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.h-calander-self .css-sp254y {
-  background-color: var(--blue-green);
-}
-
-.h-calander-self .css-yey56k button {
-  transition: 200ms ease;
-  color: white;
-}
-
-.h-calander-self .css-yey56k button:hover {
+.mantine-Calendar-calendarHeaderControl:hover,
+.mantine-Calendar-calendarHeaderLevel:hover,
+.mantine-Calendar-pickerControl:hover,
+.mantine-Calendar-day:hover {
   color: black;
 }
-
-.h-calander-self .css-pw7rye {
-  width: unset;
-  padding: unset;
-}
-
-.h-calander-self .css-7qlbje {
-  right: unset;
+.mantine-1uoqjdn[data-static]:hover {
+  background-color: white;
 }
 
 @media screen and (max-width: 700px) {
-  .calandar {
+  .calandar-container {
     padding-top: 20px;
     margin-top: 30px;
     grid-column: span 13;

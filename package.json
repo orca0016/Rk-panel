@@ -10,7 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@mantine/core": "^6.0.19",
+    "@mantine/hooks": "^6.0.19",
     "create-vite": "^4.4.1",
+    "mantine-datepicker-jalali": "^1.2.3",
     "react": "^18.2.0",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",

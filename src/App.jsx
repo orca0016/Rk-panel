@@ -1,6 +1,6 @@
 import "./App.css";
 
-function App(props) {
+function App() {
   return (
     <>
       <div className="chartBox"></div>

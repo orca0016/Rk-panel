@@ -19,10 +19,14 @@ function Task() {
             </div>
             <div className="row">
               <label>افزودن پیوند به وظیفه</label>
-              <label for="images" >
-                <span  class="drop-title">کلیک کنید یا بکشید </span>
-                <img src="../../../public/img/chouis.png" alt="select" />
-                <input type="file" id="images" placeholder="کلیک کنید یا بکشید " />
+              <label htmlFor="images">
+                <span className="drop-title">کلیک کنید یا بکشید </span>
+                <img src="../../img/chouis.png" alt="select" />
+                <input
+                  type="file"
+                  id="images"
+                  placeholder="کلیک کنید یا بکشید "
+                />
               </label>
             </div>
             <div className="row">
@@ -32,7 +36,7 @@ function Task() {
         </div>
         <div className="item1">
           <p>لاینترن باکس</p>
-          <form >
+          <form>
             <div className="row">
               <textarea placeholder="متن"></textarea>
             </div>
@@ -46,15 +50,14 @@ function Task() {
         </div>
         <div className="item2">
           <p>ثبت عنوان</p>
-          <form >
+          <form>
             <div className="row">
-             <input type="text" placeholder="دسته بندی" />
+              <input type="text" placeholder="دسته بندی" />
             </div>
             <div className="row">
               <button>ثبت تغییرات</button>
             </div>
           </form>
-
         </div>
       </div>
     </>
