@@ -1,14 +1,13 @@
-import * as React from 'react';
-
+import * as React from "react";
+import { useContext } from "react";
+import { ApiContext } from "../../context/dataContext";
 import { Link } from "react-router-dom";
 import "./dashbord.css";
 function Aside() {
-
-
-
+  const { dark } = useContext(ApiContext);
 
   return (
-    <aside className="aside">
+    <aside className={`aside ${dark ? "light3" : null}` }>
       <img src="../../img/photo.png" alt="user" />
       <button>
         <Link to={"/app/dashboard"}>

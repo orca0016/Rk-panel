@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 
-import ReactDOM from "react-dom/client";
+import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
 import { RouterProvider, createBrowserRouter, Outlet } from "react-router-dom";
 import Dashbord from "./components/dashbord/dashbord.jsx";
@@ -9,8 +9,10 @@ import Aside from "./components/dashbord/Aside.jsx";
 import User from "./components/dashbord/user.jsx";
 import Setting from "./components/setitng/Setting";
 import Task from "./components/task/Task";
-import PieChartSwiper from "./components/pieChart/PieChartSwiper";
 import Dashboard from "./pages/Dashboard";
+import { useState } from "react";
+import { ApiContext } from "./context/dataContext";
+import { dark } from "@mui/material/styles/createPalette";
 
 function DashboardLayout() {
   return (
@@ -26,7 +28,6 @@ function DashboardLayout() {
   );
 }
 function Dash() {
-  
   return (
     <>
       <div style={{ display: "flex", flexDirection: "column", width: "100%" }}>
@@ -37,41 +38,54 @@ function Dash() {
   );
 }
 
-const route = createBrowserRouter([
-  { path: "/", element: <App /> },
-  {
-    path: "/app",
-    element: <DashboardLayout />,
-    children: [
-      {
-        path: "dashboard",
-        element: <Dash />,
-        children: [
-          {
-            path: "setting",
-            element: <Setting />,
-          },
-          {
-            path: "task",
-            element: <Task />,
-          },
-          {
-            path: "contact",
-            element:<p>fdsfs</p>,
-          },
-          {
-            path: "dash",
-            element: <Dashboard />,
-          },
-        ],
-      },
-    ],
-  },
-]);
+function Main() {
+  const [dark, setDark] = useState(false);
+  const route = createBrowserRouter([
+    { path: "/", element: <App /> },
+    {
+      path: "/app",
+      element: <DashboardLayout />,
+      children: [
+        {
+          path: "dashboard",
+          element: <Dash />,
+          children: [
+            {
+              path: "setting",
+              element: <Setting />,
+            },
+            {
+              path: "task",
+              element: <Task />,
+            },
+            {
+              path: "contact",
+              element: <p>last check error</p>,
+            },
+            {
+              path: "dash",
+              element: <Dashboard />,
+            },
+          ],
+        },
+      ],
+    },
+  ]);
+  return (
+    <ApiContext.Provider
+      value={{
+        dark: dark,
+        setDark: setDark,
+      }}
+    >
+      <RouterProvider router={route} />
+    </ApiContext.Provider>
+  );
+}
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+const root = createRoot(document.getElementById("root"));
+root.render(
   <React.StrictMode>
-    <RouterProvider router={route} />
-    {/* <App /> */}
+    <Main />
   </React.StrictMode>
 );

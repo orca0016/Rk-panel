@@ -209,13 +209,45 @@ margin: 10px 0 ;
   font-size: 1.2rem;
 }
 
+.light1 .item .row input {  
+  background-color: #495057 !important;
+  color: #ffffff ;  
+}  
+.light1 .item .row textarea {  
+  background-color: #495057 !important;
+  color: #ffffff ;  
+}  
+.light1 .item .row label:nth-child(2) {  
+  background-color: #495057 !important;
+  color: #ffffff ;  
+}  
+
+.light1 .item1 .row input {  
+  background-color: #495057 !important;
+  color: #ffffff ;  
+}  
+.light1 .item1 .row input {  
+  background-color: #495057 !important;
+  color: #ffffff ;  
+}  
+.light1 .item1 .row textarea {  
+  background-color: #495057 !important;
+  color: #ffffff ;  
+}  
+
+.light1 .item2 .row input {  
+  background-color: #495057 !important;
+  color: #ffffff ;  
+}  
+
+
+
+
+
+
 @media screen and (max-width:780px) {
   .task{
     display: flex;
     flex-wrap: wrap;
-  }
-  .item{
-    
-  }
-  
+  }  
 }

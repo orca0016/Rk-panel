@@ -36,18 +36,31 @@
 }
 body {
   background-color: #232323;
-  /* overflow-x: hidden; */
 }
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow:inset 0 0 6px gray;
+}
+/* *{
+  transition: 0.1s;
+} */
 a {
   color: unset;
   text-decoration: none;
 }
-
+.list-responsive{
+  width:30px;
+}
 .idkjesus {
-  /* max-width: 1440px; */
   position: relative;
-
-  height: 1000px;
+  min-height: 100vh;
 }
 
 .sex {
@@ -55,3 +68,31 @@ a {
   height: 50px;
   background-color: #555555;
 }
+
+.light1  {
+background-color: #dee2e6;
+color: #0f0f0f !important;
+}
+.light1 ul{
+  border-color: #0f0f0f !important;
+}
+.light1 > * {
+  background-color: #dee2e6 !important;
+  color: #0f0f0f !important;
+  
+}
+
+
+
+.light2{
+  background-color: #495057 !important;
+  color: #ffffff ;
+}
+.light3{
+  background-color: #e9ecef !important;
+  color: #000000 ;
+}
+.light3 button a img{
+  filter:brightness(50%);
+}
+ 

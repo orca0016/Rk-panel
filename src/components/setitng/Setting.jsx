@@ -1,8 +1,12 @@
 import React from 'react'
+import { useContext } from "react";
+import { ApiContext } from "../../context/dataContext";
 import "./setting.css"
 function Setting() {
+  const {dark } = useContext(ApiContext);
+
   return (
-    <div className='setting-profile'>
+    <div className={`setting-profile ${dark ? "light1" : null}`} >
         <div className="container-setting">
           <div className="setting-top">
             <form>

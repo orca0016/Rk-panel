@@ -122,4 +122,22 @@
   .user-top-row ul li a {
     font-size: var(--fontsize5);
   }
+  .user-top-row ul li {
+    font-size: var(--fontsize6);
+    font-weight: 700;
+  }
+  .user-top-row ul {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .user-top-row ul {
+    gap: 10px;
+  }
+  .user-top-row ul li {
+    font-size: 4px !important;
+    /* font-weight: 00; */
+  }
+  
 }

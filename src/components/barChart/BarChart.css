@@ -4,16 +4,12 @@
   background-color: #232323;
 }
 
-.recharts-text {
-  fill: white !important;
-}
-
 .recharts-cartesian-axis-line {
   stroke: transparent !important;
 }
-.swiper-slide > div{
+.swiper-slide > div {
   display: none;
 }
-.swiper-slide-active > div{
+.swiper-slide-active > div {
   display: block;
 }

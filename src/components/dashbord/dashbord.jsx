@@ -1,10 +1,14 @@
-import { Outlet } from "react-router-dom";
 import "./dashbord.css";
-
+import { useContext } from "react";
+import { ApiContext } from "../../context/dataContext";
+import AsideBtn from "./aside-phone";
 const Dashbord = () => {
+  const {dark } = useContext(ApiContext);
+
   return (
     <>
-      <nav className="nav">
+      <nav className={`nav ${dark ? "light2" : null}`}>
+      <AsideBtn/>
         <span>
           <img src="../../img/photo.png" alt="user" />
           <div>

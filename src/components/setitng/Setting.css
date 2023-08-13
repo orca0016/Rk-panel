@@ -1,53 +1,60 @@
 :root {
-    --background1: #3e3e3e;
-    --background2: #636363;
-    --background3: #3c426e;
-    --background4: #525252;
-    --background5: #ffffff;
-    --background6: #0F0F0F;
-    --fontsize1: 2px;
-    --fontsize2: 4px;
-    --fontsize3: 8px;
-    --fontsize4: 10px;
-    --fontsize5: 12px;
-    --fontsize6: 14px;
-    --fontsize7: 18px;
-    --fontsize8: 20px;
-    --fontsize9: 28px;
-    --fontsize10: 34px;
-  }
-body{
-    overflow-x: hidden;
+  --background1: #3e3e3e;
+  --background2: #636363;
+  --background3: #3c426e;
+  --background4: #525252;
+  --background5: #ffffff;
+  --background6: #0f0f0f;
+  --fontsize1: 2px;
+  --fontsize2: 4px;
+  --fontsize3: 8px;
+  --fontsize4: 10px;
+  --fontsize5: 12px;
+  --fontsize6: 14px;
+  --fontsize7: 18px;
+  --fontsize8: 20px;
+  --fontsize9: 28px;
+  --fontsize10: 34px;
 }
-.setting-profile{
-    width: 100%;
-    min-height: 80vh;
-    display: flex;
-    justify-content: center;
-    background-color: aquamarine;
+body {
+  overflow-x: hidden;
 }
-.setting-profile .container-setting{
-    width: 700px;
-    height:80%;
-    max-width: 90%;
-    background-color: antiquewhite;
-    margin:  auto;
+.setting-profile {
+  width: 100%;
+  min-height: 87vh;
+  display: flex;
+  justify-content: center;
 }
-.setting-top{
-    width: 100%;
-    min-height: 230px;
-    background-color: var(--background6);
-    color: var(--background5);
+.setting-profile .container-setting {
+  width: 700px;
+  height: 80%;
+  max-width: 90%;
+  margin: auto;
+}
+.setting-top {
+  width: 100%;
+  min-height: 230px;
+  background-color: var(--background6);
+  color: var(--background5);
 }
 
+.setting-botton {
+  width: 100%;
+  min-height: 130px;
+  background-color: var(--background6);
 
-
-
-
-.setting-botton{
-    width: 100%;
-    min-height: 130px;
-    background-color: var(--background6);
-    color: var(--background5);
-    margin-top: 10px;
+  margin-top: 10px;
 }
+
+.light,
+.light > * {
+  background-color: #ffffff !important;
+  color: #0f0f0f !important;
+  fill: #0f0f0f !important;
+  stroke: #0f0f0f !important;
+  /* box-shadow:  0 0 10px rgb(36, 36, 36); */
+}
+
+/* .recharts-text{
+
+} */

@@ -9,7 +9,8 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
-
+import { useContext } from "react";
+import { ApiContext } from "../../context/dataContext";
 const data = [
   { name: "b1", value: 3 },
   { name: "b2", value: 42 },
@@ -44,11 +45,14 @@ const data = [
 ];
 
 function BarCharts() {
+  const { dark } = useContext(ApiContext);
+
   return (
-    <div className="h-barChart">
+    <div className={`h-barChart`}>
       <h1 className="h-h1-charts">نمودار x</h1>
       <ResponsiveContainer width="100%" height="100%">
         <BarChart
+          className={dark ? "light1" : null}
           // width={500}
           // height={300}
           data={data}

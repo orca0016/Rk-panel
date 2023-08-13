@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 function PieChartSwiper() {
   return (
     <div className="h-pieChart">
-      <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+      <Swiper navigation={true} loop={true}  modules={[Navigation]} className="mySwiper">
         <SwiperSlide>
           <PieCharts />
         </SwiperSlide>

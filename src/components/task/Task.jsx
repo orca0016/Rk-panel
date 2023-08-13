@@ -1,9 +1,14 @@
 import React from "react";
 import "./task.css";
+import { useContext } from "react";
+import { ApiContext } from "../../context/dataContext";
+
 function Task() {
+  const {dark } = useContext(ApiContext);
+
   return (
     <>
-      <div className="task">
+      <div className={`task ${dark ? "light1" : null}`}>
         <div className="item">
           <p>وظایف</p>
           <form>
