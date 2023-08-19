@@ -7,7 +7,7 @@ function Calandars() {
   const {dark } = useContext(ApiContext);
 
   return (
-    <div className={`calandar ${dark ? "light1" : null}`}>
+    <div className={`calandar ${dark ? "light2" : null}`}>
       <CalendarProvider locale="fa" round="x2" accentColor="#000000">
         <Calendar
           className="h-calander-self"

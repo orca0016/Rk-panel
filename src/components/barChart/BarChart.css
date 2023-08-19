@@ -13,3 +13,12 @@
 .swiper-slide-active > div {
   display: block;
 }
+.light1 .h-barChart h1{
+  color: #232323;
+}
+.light1 .h-areaChart h1{
+  color: #232323;
+}
+.light1 .h-pieChart-container h1{
+  color: #232323;
+}

@@ -12,7 +12,8 @@ import Task from "./components/task/Task";
 import Dashboard from "./pages/Dashboard";
 import { useState } from "react";
 import { ApiContext } from "./context/dataContext";
-import { dark } from "@mui/material/styles/createPalette";
+import {getAlldata} from "./service/data"
+import { useEffect } from "react";
 
 function DashboardLayout() {
   return (
@@ -39,7 +40,57 @@ function Dash() {
 }
 
 function Main() {
-  const [dark, setDark] = useState(false);
+
+    const [getData ,  setData ]  = useState([
+      {
+        titleTask: [],
+        lineTernBox: [],
+        task: [],
+        profile: [
+          {
+            fname: [],
+            lname: [],
+            phoneNumber: [],
+            email: [],
+            numberStudent: [],
+            bui: [],
+            srcProfile: []
+          }
+        ]
+      }
+    ])
+    console.log(getData);
+    useEffect(() => {
+      const fetchData = async () => {
+        try {
+          const { data: alldata } = await getAlldata();
+          setData(alldata);
+        } catch (err) {
+          console.log(err.message);
+        }
+      };
+      fetchData();
+    }, []);
+
+
+
+
+  const   getMode= ()=>{
+    const intialModal =  localStorage.getItem('mode');
+    if (intialModal == null) {
+        if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+          return true
+        }else{
+          return false
+        }
+    }else{
+      return JSON.parse(localStorage.getItem("mode"))
+    }
+  }
+  const [dark, setDark] = useState(getMode());
+  useEffect(()=>{
+      localStorage.setItem("mode" , JSON.stringify(dark))
+  },[dark])
   const route = createBrowserRouter([
     { path: "/", element: <App /> },
     {

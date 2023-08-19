@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./task.css";
 import { useContext } from "react";
 import { ApiContext } from "../../context/dataContext";
 
 function Task() {
   const {dark } = useContext(ApiContext);
-
+  const [test , setTest] = useState()
+  console.log(test);
   return (
     <>
       <div className={`task ${dark ? "light1" : null}`}>
@@ -14,6 +15,13 @@ function Task() {
           <form>
             <div className="row">
               <input type="text " placeholder="عنوان" />
+              <select onChange={(e)=>{setTest(e.target.value)}}>
+                <option >option</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
             </div>
             <div className="row">
               <textarea cols="30" rows="10" placeholder="شرح وظیفه"></textarea>

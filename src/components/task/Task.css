@@ -15,21 +15,27 @@
   --fontsize9: 28px;
   --fontsize10: 34px;
 }
+
+
+
+
 @keyframes run {
-  from{
+  from {
     transform: translateX(-20px);
     opacity: 0;
   }
-  to{
+  to {
     transform: translateY(0px);
     opacity: 1;
   }
 }
- .item , .item1 , .item2{
+.item,
+.item1,
+.item2 {
   transform: translateX(-20px);
-    opacity: 0;
+  opacity: 0;
   animation: run 0.3s forwards ease-in-out;
- }
+}
 input:focus,
 textarea:focus {
   border: none;
@@ -42,13 +48,16 @@ textarea::placeholder {
 .task {
   width: 100%;
   min-height: 90vh;
-
   display: grid;
   grid-template-rows: 1;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
 }
-/*? ---------------*/
+/*! ------end---------*/
+
+
+
+/*? ---------start------*/
 .item {
   color: white;
   text-align: center;
@@ -93,7 +102,7 @@ textarea::placeholder {
   background-color: var(--background1);
   color: var(--background5);
   border: none;
-  padding: 0 10px ; 
+  padding: 0 10px;
 }
 .item form .row:nth-child(4) {
   text-align: right;
@@ -122,132 +131,149 @@ textarea::placeholder {
   transition: color 0.2s ease-in-out;
 }
 .item form .row:nth-child(4) input::file-selector-button {
-    width: 100%;
-    /* height: 100px; */
-    color: var(--background5);
-    background-color: transparent;
-    border: none;
+  width: 100%;
+  /* height: 100px; */
+  color: var(--background5);
+  background-color: transparent;
+  border: none;
 }
 .item form .row:nth-child(5) button {
-    width: 100%;
-    height: 32px;
-    background-color: #8D91F0;
-    border: none;
-    color: var(--background5);
-    font-size: 1.2rem;
+  width: 100%;
+  height: 32px;
+  background-color: #8d91f0;
+  border: none;
+  color: var(--background5);
+  font-size: 1.2rem;
 }
-/*? ------end---------*/
+/*! ------end---------*/
 
+
+
+
+/*? ------end---------*/
 .item1 {
-    text-align: center;
-    padding: 10px;
+  text-align: center;
+  padding: 10px;
   grid-area: 1/1 1/3;
   color: var(--background5);
   min-width: 200px;
   animation-delay: 0.4s;
-
 }
-
-.item1 .row  {
-  margin:2px 0; 
+.item1 .row {
+  margin: 2px 0;
 }
-.item1  p   {
+.item1 p {
   margin-bottom: 10px;
 }
-
 .item1 .row textarea {
-    width: 100%;
-    min-height: 220px;
-    padding:10px ; 
-    background-color: var(--background1);
-    resize: none;
-    border:none; 
-    color: var(--background5);
+  width: 100%;
+  min-height: 220px;
+  padding: 10px;
+  background-color: var(--background1);
+  resize: none;
+  border: none;
+  color: var(--background5);
 }
 .item1 .row button {
-    width: 100%;
-    height: 32px;
-    background-color: #8D91F0;
-    border: none;
-    margin-top: 10px;
-    color: var(--background5);
-    font-size: 1.2rem;
+  width: 100%;
+  height: 32px;
+  background-color: #8d91f0;
+  border: none;
+  margin-top: 10px;
+  color: var(--background5);
+  font-size: 1.2rem;
 }
+/*!------item2---------*/
 
 
 
-
+/*?------item3---------*/
 .item2 {
   text-align: center;
-  /* background-color: aquamarine; */
   grid-area: 1/1 1/3;
   color: var(--background5);
   padding: 0 10px;
   min-width: 200px;
   animation-delay: 0.5s;
-
 }
 .item2 p {
-margin: 10px 0 ;
+  margin: 10px 0;
 }
-.item2 form  .row input{
+.item2 form .row input {
   width: 100%;
   height: 32px;
-  padding: 0 10px; 
-  background-color:var(--background1) ;
+  padding: 0 10px;
+  background-color: var(--background1);
   border: none;
+  color: #ffffff !important;
 }
-.item2 form  .row {
-  margin: 10px 0 ;
+.item2 form .row {
+  margin: 10px 0;
 }
-.item2 form  .row button{
+.item2 form .row button {
   width: 100%;
   height: 32px;
-  background-color: #8D91F0;
+  background-color: #8d91f0;
   border: none;
   color: var(--background5);
   font-size: 1.2rem;
 }
-
-.light1 .item .row input {  
+.light1 .item .row input {
   background-color: #495057 !important;
-  color: #ffffff ;  
-}  
-.light1 .item .row textarea {  
+  color: #ffffff ;
+}
+.light1 .item .row textarea {
   background-color: #495057 !important;
-  color: #ffffff ;  
-}  
-.light1 .item .row label:nth-child(2) {  
+  color: #ffffff;
+}
+.light1 .item .row label:nth-child(2) {
   background-color: #495057 !important;
-  color: #ffffff ;  
-}  
-
-.light1 .item1 .row input {  
+  color: #ffffff;
+}
+.light1 .item1 .row input {
   background-color: #495057 !important;
-  color: #ffffff ;  
-}  
-.light1 .item1 .row input {  
+  color: #ffffff;
+}
+.light1 .item1 .row input {
   background-color: #495057 !important;
-  color: #ffffff ;  
-}  
-.light1 .item1 .row textarea {  
+  color: #ffffff;
+}
+.light1 .item1 .row textarea {
   background-color: #495057 !important;
-  color: #ffffff ;  
-}  
-
-.light1 .item2 .row input {  
+  color: #ffffff;
+}
+.light1 .item2 .row input {
   background-color: #495057 !important;
-  color: #ffffff ;  
-}  
+  color: #ffffff;
+}
+/*! ------item3---------*/
 
 
-
-
-
-
-@media screen and (max-width:780px) {
-  .task{
+/*!      satrt style responsive media            */
+@media screen and (max-width: 780px) {
+  .task {
     display: flex;
     flex-wrap: wrap;
-  }  
+  }
+  .item {
+    width: 48%;
+  }
+  .item1 {
+    width: 48%;
+  }
+  .item2 {
+    width: 48%;
+  }
 }
+@media screen and (max-width: 420px) {
+  .item {
+    width: 100%;
+  }
+  .item1 {
+    width: 100%;
+  }
+  .item2 {
+    width: 100%;
+  }
+}
+/*?      end style responsive media            */
