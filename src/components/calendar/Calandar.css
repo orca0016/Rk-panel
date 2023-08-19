@@ -3,7 +3,9 @@
   grid-column: 15/14;
   grid-row: 1/20;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
   /* margin-left: 30px; */
 }
 
@@ -12,6 +14,25 @@
 .mantine-Calendar-pickerControl,
 .mantine-Calendar-day {
   color: white;
+}
+
+.mantine-Calendar-day[data-event="true"]::before {
+  content: "";
+  background-color: pink;
+  width: 5px;
+  border-radius: 50%;
+  height: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.mantine-Calendar-day[data-before="true"] {
+  color: rgb(167, 167, 167);
+}
+
+.mantine-Calendar-day[data-before="true"].mantine-Calendar-day[data-weekend="true"] {
+  color: rgb(141, 0, 0);
 }
 
 .mantine-Calendar-calendarHeaderControl:hover,
@@ -23,6 +44,9 @@
 .mantine-1uoqjdn[data-static]:hover {
   background-color: white;
 }
+.MuiDialog-root * {
+  direction: ltr;
+}
 
 @media screen and (max-width: 700px) {
   .calandar-container {
@@ -31,4 +55,9 @@
     grid-column: span 13;
     grid-row: span 20;
   }
+}
+
+.calandar-container .h-event {
+  color: white;
+  align-self: flex-start;
 }

@@ -10,8 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
     "@mantine/core": "^6.0.19",
     "@mantine/hooks": "^6.0.19",
+    "@mui/material": "^5.14.4",
+    "@mui/x-date-pickers": "^6.11.1",
     "create-vite": "^4.4.1",
     "mantine-datepicker-jalali": "^1.2.3",
     "react": "^18.2.0",
